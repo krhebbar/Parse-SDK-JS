@@ -24,6 +24,7 @@ export type AuthData = ?{ [key: string]: mixed };
 
 var CURRENT_USER_KEY = 'currentUser';
 var canUseCurrentUser = !CoreManager.get('IS_NODE');
+canUseCurrentUser = true;
 var currentUserCacheMatchesDisk = false;
 var currentUserCache = null;
 
